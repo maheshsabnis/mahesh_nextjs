@@ -37,65 +37,66 @@ const page = async ({params}:pageProps) => {
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <NavigationLinks/>
         <h1>The Product Info Page : {params.productrowid}</h1>
-        {
+        
+        {/* {
            JSON.stringify(product)
-        }
-        <table>
+        } */}
+        <table className='border-8 mx-auto  p-5 flex-col md:flex-row items-center'>
             <tbody>
               <tr>
-               <td>
+               <td className='border-4'>
                  Product Row Id
                </td>
-               <td>
-                  {product.ProductRowId}
+               <td className='border-4'>
+                  {product[0][0].ProductRowId}
                </td>
                </tr>
                <tr>
-               <td>
+               <td className='border-4'>
                  Product Id
                </td>
-               <td>
-                  {product.ProductId}
+               <td className='border-4'>
+                  {product[0][0].ProductId}
                </td>
                </tr>
                <tr>
-               <td>
+               <td className='border-4'>
                  Product Name
                </td>
                <td>
-                  {product.ProductName}
+                  {product[0][0].ProductName}
                </td>
                </tr>
                <tr>
-               <td>
+               <td className='border-4'>
                  Category Nae
                </td>
-               <td>
-                  {product.CategoryName}
+               <td className='border-4'>
+                  {product[0][0].CategoryName}
                </td>
                </tr>
                <tr>
-               <td>
+               <td className='border-4'>
                  Manufacturere Name
                </td>
                <td>
-                  {product.Manufacturer}
+                  {product[0][0].Manufacturer}
                </td>
                </tr>
                <tr>
-               <td>
+               <td className='border-4'>
                  Description
                </td>
-               <td>
-                  {product.Description}
+               <td className='border-4'>
+                  {product[0][0].Description}
                </td>
                </tr>
                <tr>
-               <td>
+               <td className='border-4'>
                  Base Price
                </td>
-               <td>
-                  {product.BasePrice}
+               <td className='border-4'>
+                  {product[0][0].BasePrice}
                </td>
                </tr>
             </tbody>

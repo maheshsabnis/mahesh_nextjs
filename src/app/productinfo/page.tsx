@@ -55,7 +55,7 @@ const ProductInfoComponent =async() => {
                    <tr key={index}>
                       {
                          columns.map((column,index)=>(
-                          <td className='border-4 ' key={index}>{product[column]}</td>
+                          <td className='border-4' key={index}>{product[column]}</td>
                         ))
                       }
                       <td className='border-4 '>

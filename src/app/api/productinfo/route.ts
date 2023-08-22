@@ -17,6 +17,7 @@ export async function GET(req: NextRequest){
    console.log('====================================');
    return NextResponse.json(data);
     } else {
+      console.log(`Receiced Product Id  =${id}`);
       const data = await ExcuteQuery("Select * from ProductInfo where ProductRowId = " + id);
       console.log('====================================');
       console.log(` Query Executed ${JSON.stringify(data)}`);

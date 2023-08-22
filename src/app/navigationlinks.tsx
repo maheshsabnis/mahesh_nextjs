@@ -8,6 +8,9 @@ const NavigationLinks = () => {
         <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center bg-fuchsia-500">
           <Link className="mr-5" href={'/'}>Home</Link>
           <Link className="mr-5" href={'/productinfo'}>Product Info</Link>
+          <Link className="mr-5" href={'/manufacturers'}>Manufacturers</Link>
+          <Link className="mr-5" href={'/products'}>Products</Link>
+          <Link className="mr-5" href={'/bff'}>BFF</Link>
         </div>
      
   </div> 
